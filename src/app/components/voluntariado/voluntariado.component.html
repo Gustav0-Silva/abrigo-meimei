@@ -1,1 +1,32 @@
-<p>voluntariado works!</p>
+<div class="voluntariado-container">
+    <div class="conteudo-principal">
+      
+      
+      <div class="texto-container">
+        <h2 class="titulo-sobre">Seja Voluntário!</h2>
+        <p class="texto-sobre">
+            Em cada olhar triste atrás das grades, existe um pedido silencioso por amor, carinho e atenção. Nossos animais 
+            resgatados já enfrentaram o abandono, o medo e a solidão — mas, com a ajuda de voluntários dedicados, eles 
+            redescobrem a confiança e o aconchego que só um gesto humano pode oferecer. Ser voluntário vai muito além 
+            de doar tempo: é transformar vidas com um simples afago, um passeio no parque ou um momento de cuidado.
+        </p>
+        <div class="texto-sobre">
+            <p >
+                Talvez você não consiga mudar o mundo inteiro, mas pode mudar o mundo de um animal. Aqui no abrigo, 
+                cada voluntário se torna um elo fundamental na corrente de amor e recuperação. Se você sente no coração o 
+                desejo de fazer a diferença, junte-se a nós. Há um rabo abanando, um ronronar tímido ou um olhar agradecido 
+                esperando por você.
+            </p>
+        </div>
+    </div>
+    <div class="foto-container">
+        <img src="https://pasadenahumane.org/wp-content/uploads/2023/03/PasadenaHumane_DogKissingVolunteer-1030x687.jpg" alt="Equipe do Abrigo Meimei" class="foto-equipe">
+      </div>
+    </div>
+    <div class="botoes-acoes">
+        <button class="btn-acao" (mouseenter)="animarBtn($event)" (mouseleave)="resetarBtn($event)" (click)="abrirFormulario()">
+          <span class="btn-texto">Seja Voluntário</span>
+        </button>
+      </div>
+
+  </div>

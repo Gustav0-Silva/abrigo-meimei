@@ -1,0 +1,117 @@
+.informar-abandono-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .conteudo-principal {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  
+  .foto-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .foto-equipe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .foto-equipe:hover {
+    transform: scale(1.02);
+  }
+  
+  .texto-container {
+    flex: 1;
+  }
+  
+  .titulo-sobre {
+    color: #e67b7b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .texto-sobre {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .botoes-acoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-acao {
+    background-color: white;
+    color: #444;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    min-width: 180px;
+  }
+  
+  .btn-acao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-acao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(246, 201, 208, 0.4), transparent);
+    transition: 0.5s;
+  }
+  
+  .btn-acao:hover::before {
+    left: 100%;
+  }
+  
+  .btn-texto {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Efeito de clique */
+  .btn-acao:active {
+    transform: translateY(-2px) scale(0.98);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .conteudo-principal {
+      flex-direction: column;
+    }
+    
+    .foto-container, .texto-container {
+      width: 100%;
+    }
+    
+    .botoes-acoes {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
