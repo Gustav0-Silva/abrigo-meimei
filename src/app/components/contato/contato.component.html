@@ -1,1 +1,31 @@
-<p>contato works!</p>
+<div class="contato-container">
+    <div class="header">
+      <h1 class="titulo-principal">Quer falar com a gente?</h1>
+      <p class="subtitulo">Escolha seu canal preferido e fale conosco quando quiser</p>
+    </div>
+  
+    <div class="redes-container">
+      <div class="rede-card" *ngFor="let rede of redesSociais" (mouseenter)="hoverCard(rede)" (mouseleave)="resetCard()"
+           [class.hover]="hoverState === rede.nome" [class.active]="activeCard === rede.nome">
+        <div class="card-header">
+          <div class="icone-container" [style.backgroundColor]="getIconBgColor(rede.icone)">
+            <img [src]="rede.icone" [alt]="rede.nome" class="icone-rede"/>
+          </div>
+          <h2>{{ rede.nome }}</h2>
+        </div>
+        
+        <p class="descricao">{{ rede.descricao }}</p>
+        
+        <a [href]="rede.link" class="link-rede" target="_blank" (click)="setActive(rede.nome)">
+          {{ rede.textoLink }}
+          <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+        </a>
+        
+        <div class="detalhe-hover"></div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p></p>
+    </div>
+  </div>

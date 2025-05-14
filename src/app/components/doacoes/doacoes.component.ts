@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class DoacoesComponent {
 
+  animarBtn(event: MouseEvent): void {
+    const btn = event.target as HTMLElement;
+    btn.style.backgroundColor = '#f8cbd2';
+    btn.style.color = 'white';
+  }
+
+  resetarBtn(event: MouseEvent): void {
+    const btn = event.target as HTMLElement;
+    btn.style.backgroundColor = 'white';
+    btn.style.color = '#444';
+  }
 }

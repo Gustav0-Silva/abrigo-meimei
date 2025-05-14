@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GridAdocaoAnimaisComponent } from '../../grid-adocao-animais/grid-adocao-animais.component';
+import { GridAdocaoAnimaisComponent } from '../grid-adocao-animais/grid-adocao-animais.component';
 
 @Component({
   selector: 'app-disponiveis',

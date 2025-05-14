@@ -8,7 +8,7 @@ import { DisponiveisComponent } from './components/disponiveis/disponiveis.compo
 import { DoacoesComponent } from './components/doacoes/doacoes.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 import { VoluntariadoComponent } from './components/voluntariado/voluntariado.component';
-import { GridAdocaoAnimaisComponent } from './grid-adocao-animais/grid-adocao-animais.component';
+import { GridAdocaoAnimaisComponent } from './components/grid-adocao-animais/grid-adocao-animais.component';
 import { LayoutComponent } from './components/layout/layout.component'; // novo componente de layout
 
 export const routes: Routes = [
